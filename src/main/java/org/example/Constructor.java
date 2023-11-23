@@ -2,13 +2,13 @@ package org.example;
 
 public class Constructor {
 
-    private String constructorId;
+    private int constructorId;
     private String constructorRef;
     private String name;
     private String nationality;
     private String url;
 
-    public Constructor(String constructorId, String constructorRef, String name, String nationality, String url) {
+    public Constructor(int constructorId, String constructorRef, String name, String nationality, String url) {
         this.constructorId = constructorId;
         this.constructorRef = constructorRef;
         this.name = name;
@@ -17,6 +17,10 @@ public class Constructor {
     }
 
 
+    public void setConstructorId(int constructorId) {
+        this.constructorId = constructorId;
+    }
+
     public Constructor(String constructorRef, String name, String nationality, String url) {
         this.constructorRef = constructorRef;
         this.name = name;
@@ -24,7 +28,7 @@ public class Constructor {
         this.url = url;
     }
 
-    public String getConstructorId() {
+    public int getConstructorId() {
         return constructorId;
     }
 
